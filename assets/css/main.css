@@ -373,5 +373,7 @@ li a:hover {
 @media screen and (max-width: 600px) {
   .main {
     background-size: 10%;
-  }
+  }.hero__container {
+display: block;
+}
 }
