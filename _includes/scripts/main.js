@@ -11,6 +11,8 @@ setTimeout(() => {
   const isCookie = localStorage.getItem("cookieBannerDisplayed");
   if (isCookie === "true") {
     cookieContainer.style.display = "none";
+  } else {
+      cookieContainer.style.display = "flex"
   }
 }, 0);
 
