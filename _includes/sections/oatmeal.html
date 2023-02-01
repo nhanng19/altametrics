@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      href="https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:ital,wght@0,300;0,700;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="../../assets/css/cookies.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+    <title>Document</title>
+</head>
+  <style>
+    li:nth-child(4) {
+background: #FFFFFF;
+border-radius: 40px;
+}
+  </style>
+ <body class="oatmeal" class="list">
+    <nav class="navbar">
+      <ul>
+        <li class ="logo"><a href="/"><img src="../../assets/img/logo.png" alt=""></a></li>
+        <li><a href="./list.html">Cookie list</a></li>
+        <li><a href="./chocolate.html">Chocolate Chip</a></li>
+        <li><a href="./oatmeal.html">Oatmeal Raisin</a></li>
+        <li><a href="./snickerdoodle.html">Snickerdoodle</a></li>
+        <li class="buyNow"><a>Buy Now</a></li>
+      </ul>
+    </nav>
+        <div class="demo">SCHEDULE A DEMO</div>
+    <section class="hero__container">
+      <img data-aos="fade-in"class="hero__blob" src="../../assets/img/oatmealblob.svg" alt="" />
+      <div class="left">
+        <div class="hero__content">
+          <div class="text">
+            <h1 data-aos="fade-up">Cookie Oatmeal Raisin</h1>
+            <h2 data-aos="fade-up">
+              Our cookies have the healthiest ingredients ever. Just try it and
+              you will enjoy the taste.
+            </h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img class="img"data-aos="fade-in" src="../../assets/img/oatmealmilk.png" alt="" />
+      </div>
+    </section>
+    <section class="mid__container">
+      <img
+        data-aos="fade-left"
+        class="second__chocolate"
+        src="../../assets/img/oatmealgroup.png"
+        alt=""
+      />
+    </section>
+        <section class="second__container">
+      <img
+        data-aos="fade-in"
+        class="second__milk"
+        src="../../assets/img/oatmealblob.png"
+        alt=""
+      />
+
+      <div class="left"></div>
+      <div class="right">
+        <div class="second__content">
+          <div class="second__text">
+            <h1 data-aos="fade-up">Baked Fresh</h1>
+            <h2 data-aos="fade-up">
+              We promise you the best taste with fresh-baked cookies. Once you
+              get into our cookies, there is no going back
+            </h2>
+            <img data-aos="fade-up" src="../../assets/img/lightblob.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+        <img data-aos="fade-in" class="footer__cookies" src="../../assets/img/footerchocolate.png" alt="">
+      <div data-aos="fade-in" class="video__container">
+        <div class="video__wrapper">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/HNB1b5mod1g" title="Oatmeal Raisin Cookies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <img class="footer__logo" src="../../assets/img/logo.png" alt="" />
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+            var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+  } else {
+    document.querySelector(".navbar").style.top = "-161.78px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+    </script>
+</body>
+</html>
