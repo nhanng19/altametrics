@@ -57,19 +57,28 @@
     <nav class="navbar">
       <ul>
         <li class="logo">
-          <a><img src="./assets/img/logo.png" alt="" /></a>
+          <a href="./index.html"><img src="./assets/img/logo.png" alt="" /></a>
         </li>
         <li><a href="./_includes/sections/list.html">Cookie list</a></li>
-        <li><a href="./_includes/sections/chocolate.html">Chocolate Chip</a></li>
+        <li>
+          <a href="./_includes/sections/chocolate.html">Chocolate Chip</a>
+        </li>
         <li><a href="./_includes/sections/oatmeal.html">Oatmeal Raisin</a></li>
-        <li><a href="./_includes/sections/snickerdoodle.html">Snickerdoodle</a></li>
+        <li>
+          <a href="./_includes/sections/snickerdoodle.html">Snickerdoodle</a>
+        </li>
 
         <li class="buyNow"><a>Buy Now</a></li>
       </ul>
     </nav>
     <div class="demo">SCHEDULE A DEMO</div>
     <section class="hero__container">
-      <img data-aos="fade-in" class="hero__blob" src="./assets/img/heroblob.png" alt="" />
+      <img
+        data-aos="fade-in"
+        class="hero__blob"
+        src="./assets/img/heroblob.png"
+        alt=""
+      />
       <div class="left">
         <div class="hero__content">
           <div class="text">
@@ -78,7 +87,9 @@
               Our cookies have the healthiest ingredients ever. Just try it and
               you will enjoy the taste.
             </h2>
-            <a href="./_includes/sections/list.html"><img data-aos="fade-up" src="./assets/img/brownblob.svg" alt=""></a>
+            <a href="./_includes/sections/list.html"
+              ><img data-aos="fade-up" src="./assets/img/brownblob.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -138,7 +149,9 @@
               Our cookies are all made by hand with premium, all-natural
               ingredients. We provide quality cookies with extra care.
             </h2>
-             <a href="./_includes/sections/list.html"><img data-aos="fade-up" src="./assets/img/lightblob.svg" alt=""></a>
+            <a href="./_includes/sections/list.html"
+              ><img data-aos="fade-up" src="./assets/img/lightblob.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -147,15 +160,9 @@
     <footer class="footer">
       <div data-aos="fade-in" class="video__container">
         <div class="video__wrapper">
-          <iframe
-            width="1280"
-            height="720"
-            src="https://www.youtube.com/embed/loqCY9b7aec"
-            title="Classic Chocolate Chip Cookies Recipe"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <video controls>
+            <source src="./assets/videos/chocolatechip.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
       <img class="footer__logo" src="./assets/img/logo.png" alt="" />
@@ -164,15 +171,15 @@
     <script>
       AOS.init({ duration: 1000 });
       var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.top = "0";
-  } else {
-    document.querySelector(".navbar").style.top = "-161.78px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.querySelector(".navbar").style.top = "0";
+        } else {
+          document.querySelector(".navbar").style.top = "-161.78px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
     </script>
   </body>
 </html>
