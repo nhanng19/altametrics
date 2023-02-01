@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-    <title>
-      CookiesMania
-    </title>
+    <title>CookiesMania</title>
     <meta name="generator" content="Jekyll v4.3.2" />
     <meta property="og:title" content="CookiesMania" />
     <meta property="og:locale" content="en_US" />
@@ -36,7 +34,11 @@
       }
     </script>
     <!-- End Jekyll SEO tag -->
-    <link rel="icon" href="./assets/img/chocolatemilk.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./assets/img/chocolatemilk.png"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Arapey&family=Poppins:ital,wght@0,300;0,700;1,400;1,900&display=swap"
       rel="stylesheet"
@@ -93,6 +95,11 @@
       </div>
       <div class="right">
         <img data-aos="fade-in" src="./assets/img/chocolatemilk.png" alt="" />
+      </div>
+      <div class="banner">
+        <img src="./assets/img/cookiebanner.png" alt="" />
+        <h1>Can we use cookies to imrpove your experience?</h1>
+        <button class="action__btn"><h1>Agree</h1></button>
       </div>
     </section>
     <section class="mid__container">
@@ -166,18 +173,6 @@
       <img class="footer__logo" src="./assets/img/logo.png" alt="" />
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ duration: 1000 });
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.querySelector(".navbar").style.top = "0";
-        } else {
-          document.querySelector(".navbar").style.top = "-161.78px";
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    </script>
+<script src="./_includes/scripts/main.js"></script>
   </body>
 </html>

@@ -57,12 +57,12 @@ body {
   top: -10%;
 }
 
-.logo:before{
-  content:"";
+.logo:before {
+  content: "";
   position: absolute;
-left: 15%;
+  left: 15%;
   top: 21%;
-    width: 381.28px;
+  width: 381.28px;
   height: 74.92px;
   background: #ffffff;
   background-position: right;
@@ -129,6 +129,52 @@ li a:hover {
   color: white;
 }
 
+.banner {
+  position: fixed;
+  margin: 0 auto;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(40px);
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1295px;
+  height: 110px;
+  border-radius: 78px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 33px;
+  color: #2a1913;
+  display: flex;
+  gap: 15rem;
+  z-index: 100;
+}
+
+.banner button {
+  display: flex;
+  width: 20%;
+  height: 70%;
+  font-weight: 400;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  background: #ffdaa4;
+  border-radius: 68px;
+  cursor: pointer;
+  border: none;
+}
+.banner h1 {
+  float: left;
+}
+.banner > * {
+  display: inline;
+}
 .hero__blob {
   z-index: -2;
   position: absolute;
@@ -373,7 +419,8 @@ li a:hover {
 @media screen and (max-width: 600px) {
   .main {
     background-size: 10%;
-  }.hero__container {
-display: block;
-}
+  }
+  .hero__container {
+    display: block;
+  }
 }
